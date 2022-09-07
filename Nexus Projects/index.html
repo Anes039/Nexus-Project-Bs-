@@ -1,0 +1,561 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Project</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+        <style>
+            body{
+                margin:0;
+                background-color: white;
+            }
+            #Itemm{
+                color:white;
+            }
+            
+            #nex{
+                position: absolute;
+                top:15;
+                margin-left: 6.8em;
+                margin-top:7px;
+            }
+            #AboutUs{
+                margin-top:0;
+            }
+            #free:hover{
+                background-color: white;
+                color:black; 
+            }
+            a.btn:hover{
+                background-color: white;
+                color:black; 
+            }
+            .bluee{
+                position:absolute;
+                right:175;
+                margin-top:7px;
+                margin-left:2em;
+                background-color:#60d6fe;
+                display: inline-block;
+                 background: rgba(255,255,255,.1);
+                color: #fff;
+                 font-family: "Roboto",sans-serif;
+                 width: 134px;
+                font-size: 13px;
+                 font-weight: 500;
+                border: 1px solid rgba(255,255,255,.5);
+                line-height: 48px;
+                border-radius: 3px;
+                outline: none!important;
+                 box-shadow: none!important;
+                text-align: center;
+                cursor: pointer;
+                transition: all 300ms linear 0s;
+            }
+            .bluee:hover{
+                background-color: white;
+                color:black;
+            }
+            .get{
+                display: inline-block;
+                background: rgba(255,255,255,.1);
+                 color: #fff;
+                font-family: "Roboto",sans-serif;
+                width: 134px;
+                font-size: 14px;
+                font-weight: 500;
+                border: 1px solid rgba(255,255,255,.5);
+                line-height: 48px;
+                border-radius: 3px;
+                outline: none!important;
+                box-shadow: none!important;
+                text-align: center;
+                 cursor: pointer;
+                transition: all 300ms linear 0s;
+                margin-right:15px;
+            }
+            .get:hover{
+                background-color: white;
+                color:black;
+            }   
+            .Down{
+                display: inline-block;
+                background: #fff;
+                color: #222;
+                font-family: "Roboto",sans-serif;
+                width: 134px;
+                font-size: 14px;
+                font-weight: 500;
+                border: 1px solid rgba(255,255,255,.5);
+                 line-height: 48px;
+                border-radius: 3px;
+                outline: none!important;
+                box-shadow: none!important;
+                text-align: center;
+                cursor: pointer;
+                transition: all 300ms linear 0s;
+
+            }
+            .Down:hover{
+                color:white;
+                background-color:#60d6fe;
+            }
+            #teksti{
+                font-size: 14px;
+                font-family: "Roboto",sans-serif;
+                line-height: 24px;
+                color: #777;
+                margin-bottom: 0;
+                max-width: 570px;
+                margin: auto;
+            }
+            #tekstii{
+                font-size:14px;
+                max-width:310px;
+            }
+            .titulli{
+                font-size:30px;
+            }
+            h6{
+                font-size:30px;
+            }
+            .col-4{
+                width:auto;
+            }
+            .row{
+                flex-wrap:nowrap;
+                width:auto;
+
+            }
+            
+            .bi:hover{
+                color:#56c3fe;
+            }
+            .titulli:hover{
+                color:#56c3fe;
+            }
+            #listaa{
+                margin-top:7em
+            }
+            .space{
+                margin-bottom: 1em;
+            }
+            #primeb{
+                display: inline-block;
+                background-image: linear-gradient(to right,#4dabff 0%,#62ddff 48%,#4dabff 100%);
+                background-size: 200% auto;
+                padding: 0 35px;
+                color: #fff;
+                font-family: "Roboto",sans-serif;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 50px;
+                border-radius: 5px;
+                outline: none!important;
+                box-shadow: none!important;
+                text-align: center;
+                cursor: pointer;
+                transition: all 300ms linear 0s;
+                width:200px;
+}
+            #excell{
+                font-size:16px;
+                font-family: sans-serif,"Roboto";
+            }
+            #pages{
+                background-color: #edf6ff;
+            }
+            #c{
+                background-color: #56c3fe;;
+            }
+            #t{
+                font-size: 14px;
+                 font-family: "Roboto",sans-serif;
+                line-height: 24px;
+                color: #777;
+                margin-bottom: 0;
+                max-width: 570px;
+                margin: auto;
+                    
+            }
+            #we{
+                font-size:36px;
+            }
+            #listat li{
+                border:none;
+            }
+            #priceIt{
+                text-align: center;
+                border: 1px solid #eee;
+                 border-radius: 5px;
+                }
+            .dollar{
+                font-size: 24px;
+                vertical-align: top;
+                padding-top: 14px;
+                display: inline-block
+            }
+            .pricef h3{
+                font-size:72px;
+            }
+            .pricef{
+                max-width: 280px;
+                margin: 0 auto 40px;
+                background: #edf6ff;
+                border-radius: 5px;   
+                
+            }
+            .month{
+                font-size: 14px;
+                color: #777;
+                font-family: "Roboto",sans-serif;
+                display: inline-block;
+                text-align: left;
+            }
+            .card-title{
+                background: #edf6ff;
+            }
+            .card-title:hover{
+                background-color: #60d6fe;
+            }
+            #card-hover:hover{
+                background-color: #60d6fe;
+                color:white;
+            }
+            #card-hover span:hover{
+                background-color: #60d6fe;
+                color:white;
+            }
+            #primebb{
+                display: inline-block;
+                background-image: linear-gradient(to right,#4dabff 0%,#62ddff 48%,#4dabff 100%);
+                background-size: 200% auto;
+                padding: 0 35px;
+                color: #fff;
+                font-family: "Roboto",sans-serif;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 50px;
+                border-radius: 5px;
+                outline: none!important;
+                box-shadow: none!important;
+                text-align: center;
+                cursor: pointer;
+                transition: all 300ms linear 0s;
+                width:200px;
+            }
+            #primebb:hover{
+                background-color: white;
+                color:black;
+            }
+            .gett{
+                display: inline-block;
+                background-color:#60d6fe;
+                 color: #fff;
+                font-family: "Roboto",sans-serif;
+                width: 134px;
+                font-size: 14px;
+                font-weight: 500;
+                border: 1px solid rgba(255,255,255,.5);
+                line-height: 48px;
+                border-radius: 3px;
+                outline: none!important;
+                box-shadow: none!important;
+                text-align: center;
+                 cursor: pointer;
+                transition: all 300ms linear 0s;
+               margin-top:1.65em;
+            }
+            .gett:hover{
+                background-color: white;
+                color:black;
+            }
+            .f-area{
+                background: #000410;;
+                padding-top: 100px;
+    padding-bottom: 100px;
+            }
+            .f-text {
+                color:white;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: "Heebo",sans-serif;
+                margin-bottom: 0;
+            }
+            #f-p{
+                font-size: 14px;
+                line-height: 24px;
+                font-family: "Roboto",sans-serif;
+                color: #777;
+                margin-bottom: 5px
+            }
+            .lib{
+                color: #3bcaf3;
+            }
+        </style>
+       <section id="c">
+                <!--Brand Title-->
+            <nav class="navbar navbar-expand-md navbar-light  pb-4">
+            <div class="container-xxl">   
+                <span class="fw-bold text-light fs-4 " id="nex" >   Nexus   </span>
+
+            <!--NavBar-->
+        <div class="container-xxl " >
+            <ul class="nav nav-pills justify-content-center mt-3 pb-4">
+                
+                <li class="nav-item ms-0" id="Itemm">
+                  <a class="nav-link " aria-current="page" href="#" style = color:white;>Home</a>
+                </li>
+                <li class="nav-item me-3 text-light">
+                  <a class="nav-link" href="#" style = color:white;>About</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="#"style = color:white;>Services</a>
+                </li>
+                <li class="nav-item me-3"  >
+                    <a class="nav-link" href="#" style = color:white;>Pages</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link" href="#" style = color:white;>Blog</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link" href="#" style = color:white;>Contact</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="blue" href="#"> <button class="bluee"> Free Trial</button> </a>
+                  </li>
+                  
+                   <!-- <li class="nav-item "  >
+                        <a class="btn  border-white  text-end text-light fw-bolder p-3 text-md-end" id ="free"  href="#" style="background-color:#60d6fe;position: absolute;margin-left: 10em;" >Free Trial</a>
+                    </li>
+              </ul> -->
+
+                        <!--Text and Picture-->
+                    <section id="Home">
+                    <div class="container-lg mt-5">
+                        <div class="row g-4 justify-content-center align-items-center">
+                            <div class="col-md-5 text-center text-md-start">
+                              <h1>
+                                <div class="display-5 text-light fw-bolder" style="padding-top:1em"> Mass People </div>
+                                <div class="display-5 text-light fw-bolder">Oriented Software</div>
+                              </h1>
+                              <p class="lead  text-light text-md-start fs-5 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusantium molestias, omnis dolorem dicta reprehenderit voluptatem. Et explicabo possimus harum laborum. Quam dolor magnam obcaecati, porro, fugiat veritatis iusto maiores corrupti eaque, saepe perspiciatis sapiente exercitationem voluptates?</p>
+                              
+                              <div class="btn-group mt-4" role="group" aria-label="Basic mixed styles example">
+                                <a class="blue" href="#"> <button class="get"> Get Started</button> </a>
+                                <a class="blue" href="#"> <button class="Down"> Download</button> </a>
+                              </div>
+                            </div>
+                            <div class="col-md-5 text-center d-none d-md-block">
+                        
+                                <img src="laptop.png" class="img-fluid" alt="ebook">
+
+                            </div>
+                          </div>
+                        </div>
+              
+                             </div>
+                            </div> 
+                        </nav>
+                    </div>
+            </section>
+        </section>
+                    <section id="AboutUs" class="bg-light ">
+                        <div class="container-lg ">
+                    <div class="text-center justify-content-center"> <br> <br> <br> <br>
+                      <h1 class="display-5 fw-bold ">How It Works For You</h1>
+                 <p class="lead  " id="teksti">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non odio incidunt quae! Dolor eum reprehenderit a consequatur eaque aliquam, impedit sequi. </p>
+                 </div>   
+                </div> 
+                 
+                            <!--Listat-->
+
+                            <!--First One-->
+                            <div class="container-lg  " id="listaa">
+                                <div class="row " style="padding-bottom: 2.81em;
+                                padding-right: 5.9em;
+                            ">
+                            <div class= "col-md-4  mb-5 me-5">
+                            <h6>
+                                <div class="titulli ms-5"><i class="bi bi-laptop-fill" style="margin-left:3em"></i>  <br> <div class="space"></div>
+                                    Stunning Visuals</div>
+                            </h6>
+                               <p class="lead text-align-center mt-0 p-1" style="max-width:400px; " id="tekstii">Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
+                           
+                            </div>
+                    <!--Lista e dyte--> 
+                        
+                        <div class="row "></div>
+                    <div class= "col-md-4  mb-3  me-5">
+                    
+                        <h6>
+                            <div class="titulli ms-5 " ><i class="bi bi-arrow-left-right" style="margin-left:3em"></i> <br><div class="space"></div> 
+                            Stunning Visuals </div>
+                        </h6>
+                               <p class="lead mt-0 p-1" style="max-width:400px; " id="tekstii">Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
+                              
+                 </div>
+                     
+                 <!--Lista e trete-->
+                 
+              <div class="row "></div>
+                 <div class= "col-md-4  m1-3">
+                    
+                    <h6>
+                        <div class="titulli ms-5" ><i class="bi bi-alarm" style="margin-left:3em;"></i> <br><div class="space"></div>
+                        Stunning Visuals </div>
+                    </h6>
+                           <p class="lead mt-0 p-1" style="max-width:400px; " id="tekstii">Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
+             </div> 
+         </div>
+</section>
+
+                <!--Page Section-->
+                <section id="pages">
+                    <div class="container-lg ">
+                        <div class="row g-4 justify-content-center align-items-center" style="height :35em" >
+                            <div class="col-md-5 text-center text-md-start mt-5">
+                              <h1>
+                                <div class="display-5 text-dark fw-bolder" id="we"> We've made a life </div>
+                                <div class="display-5 text-dark fw-bolder" id="we">that will change you</div>
+                              </h1>
+                              <h6 class="mt-4" id="excell">We are Here to Listen from your deliver excellence</h6>
+                             
+                              <p class="lead" id="t">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum iusto doloremque, ducimus voluptate possimus nam.</p>
+                              <button type="button" class="btn btn-primary mt-5" id="primeb">Get Started Now </button>
+                            </div>
+                            <div class="col-md-5 text-center d-none d-md-block">
+                        
+                                <img src="laptop.png" class="img-fluid" alt="ebook">
+                                 </div>
+                              </div>
+                             </div>
+                        
+                </section>
+
+                        <!--Pricing Section-->
+                    <section id="pricing" class="bg-light ">
+                        <div class="container-lg">
+                            <div class="text-center">
+
+                             <h4 class="display-5 fw-bold" style="padding-top:2.21em;">   Choose Your Pricing Plan </h4>
+                            </div>
+                              <p class="lead" id="t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laudantium adipisci sapiente veritatis amet tempora ratione nostrum? Nam, inventore.</p>
+                            
+                              <!--First Card-->
+                              <div class="row  g-9 align-items-center justify-content-center" style="
+                              margin-top: 5.5em;">
+                                <div class=" col-lg-4 ">
+                                    <div class="card border-0" id = priceIt>
+                                        <div class="card-body text-center py-4">
+                                            <h4 class="card-title" style=" text-align: center;
+                                           
+                                            padding: 35px 0;
+                                            border-bottom: 1px solid #eee; width: 100%;" id="card-hover">Real Basic</h4>
+                                            <ul class="list-group mt-5 b-0" id = listat>
+                                                <li class="list-group-item lead">2.5 Gb Space</li>
+                                                <li class="list-group-item lead">Secure Online Transfer</li>
+                                                <li class="list-group-item lead">Unlimited Styles</li>
+                                                <li class="list-group-item lead">Customer Service</li>
+                                            </ul>
+                                               <div class="price_f mt-5" style="background: #edf6ff;"> <h3 class="display-3 fw-bolder p-4" id="card-hover"> <span class="dollar">$</span> 39 <span class="month">Per <br> month</span>
+                                             <a href="#">  <button class="gett" ">Get Started Now</button>  </a>
+                                            </h3>
+                                                 
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                        
+                                </div>
+                                
+
+                                <!--Second Card-->
+                                <div class=" col-lg-4 ">
+                                    <div class="card border-0" id = priceIt>
+                                        <div class="card-body text-center py-4">
+                                            <h4 class="card-title" style=" text-align: center;
+                                           
+                                            padding: 35px 0;
+                                            border-bottom: 1px solid #eee; width: 100%;" id="card-hover">Real Standard</h4>
+                                            <ul class="list-group mt-5 b-0" id = listat>
+                                                <li class="list-group-item lead">10 Gb Space</li>
+                                                <li class="list-group-item lead">Secure Online Transfer</li>
+                                                <li class="list-group-item lead">Unlimited Styles</li>
+                                                <li class="list-group-item lead">Customer Service</li>
+                                            </ul>
+                                               <div class="price_f mt-5" style="background: #edf6ff;"> <h3 class="display-3 fw-bolder p-4" id="card-hover"> <span class="dollar">$</span> 69 <span class="month">Per <br> month</span>
+                                             <a href="#">  <button class="gett" ">Get Started Now</button>  </a>
+                                            </h3>
+                                                 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Card Number three-->
+                                <div class=" col-lg-4 ">
+                                    <div class="card border-0" id = priceIt>
+                                        <div class="card-body text-center py-4">
+                                            <h4 class="card-title" style=" text-align: center;
+                                           
+                                            padding: 35px 0;
+                                            border-bottom: 1px solid #eee; width: 100%;" id="card-hover">Real Ultimate</h4>
+                                            <ul class="list-group mt-5 b-0" id = listat>
+                                                <li class="list-group-item lead">Unlimited Space</li>
+                                                <li class="list-group-item lead">Secure Online Transfer</li>
+                                                <li class="list-group-item lead">Unlimited Styles</li>
+                                                <li class="list-group-item lead">Customer Service</li>
+                                            </ul>
+                                               <div class="price_f mt-5" style="background: #edf6ff;"> <h3 class="display-3 fw-bolder p-4" id="card-hover"> <span class="dollar">$</span> 99 <span class="month">Per <br> month</span>
+                                             <a href="#">  <button class="gett" >Get Started Now</button>  </a>
+                                            </h3>
+                                                 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </section>
+
+                            <footer class="f-area">
+                                <div class="container-lg">
+                                    <div class="row justify-content-evenly" style="padding-top:2em; margin-right:-15px; margin-left:-15px;">
+                                        <div class="col-md-4 justify-content-lg-evenly d-flex flex-column " style=" margin-left:4em">
+                                            <h3 class="f-text">About me</h3>
+                                            <p class="lead mt-4" id="f-p" >Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+                                            <p class="lead mt-2" id="f-p">Copyright ©2022 All rights reserved | This template is made with  by <span class="lib">  Colorlib  </span> </p>
+
+                                        </div>
+                                        <div class="col-md-4 justify-content-lg-evenly d-flex flex-column  ms-5" >
+                                            <h3 class="f-text mb-2">Newsletter</h3> <br>
+                                            <p class="lead " id="f-p" >Stay Updated with our latest trends</p>
+                                        
+                                            <div class="input-group mb-5 pb-3">
+                                                <input type="text" class="form-control" placeholder="Enter Your Email Address" aria-label="Email">
+                                                <span class="input-group-text"><i class="bi bi-arrow-right-circle-fill"></i></span>
+
+                                              </div>
+
+                                        </div>
+                                        <div class="col-md-4 justify-content-lg-evenly d-flex flex-column " style = "margin-left:5em">
+                                            <h3 class="f-text">Follow Me</h3>
+                                            <p class="lead mt-4" id="f-p" >Let us be social</p>
+                                            <div class="ul l-type-none d-flex " style = "margin-bottom:4.5em" >
+                                                <li class="list-unstyled"><i class="bi bi-facebook"></i></li>
+                                                <li class="list-unstyled ms-2"><i class="bi bi-twitter"></i></li>
+                                                <li class="list-unstyled ms-2"><i class="bi bi-instagram"></i></li>
+                                                <li class="list-unstyled ms-2"> <i class="bi bi-globe"></i></li>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+</body>
+</html>
